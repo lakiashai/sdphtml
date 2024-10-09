@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Culture Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar styling */
+        header {
+            background: linear-gradient(90deg, #fdd835, #ff8a65);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+
+        .categories-section {
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        .categories-section h2 {
+            font-size: 36px;
+            color: #ff5722;
+            margin-bottom: 40px;
+        }
+
+        .categories-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .category-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            color: white;
+            text-decoration: none;
+        }
+
+        .category-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        .category-card h3,
+        .category-card p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Background images for each category */
+        .dance {
+            background-image: url('https://i.pinimg.com/1200x/7b/e9/4d/7be94d86840df2e92584f8635aff2baf.jpg');
+        }
+
+        .monuments {
+            background-image: url('https://i.pinimg.com/236x/c4/58/58/c45858a9fcefb8f4e5eec6a99819b1b3.jpg');
+        }
+
+        .food {
+            background-image: url('https://i.pinimg.com/236x/28/e4/d6/28e4d6570eab3795ae98ce7809076c75.jpg');
+        }
+
+        .festival {
+            background-image: url('https://i.pinimg.com/236x/5c/de/92/5cde92a9ad279aeb98b4af1156f529f4.jpg');
+        }
+
+        .music {
+            background-image: url('https://i.pinimg.com/236x/26/69/f9/2669f9ec83bdcaddfbfec85439f17767.jpg');
+        }
+
+        @media (max-width: 768px) {
+            .categories-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .category-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Indian Culture</h1>
+        <nav>
+            <ul>
+                <li><a href="userhome.html">Home</a></li>
+                <li><a href="categories.html">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Categories Section -->
+    <div class="categories-section">
+        <h2>Explore Indian Culture</h2>
+        <div class="categories-container">
+            <!-- Dance Category -->
+            <a href="dance.html" class="category-card dance">
+                <h3>Dance</h3>
+                <p>Explore India's rich classical and folk dance traditions like Bharatanatyam, Kathak, and more.</p>
+            </a>
+
+            <!-- Monuments Category -->
+            <a href="monuments.html" class="category-card monuments">
+                <h3>Monuments</h3>
+                <p>Discover India's architectural wonders, from the Taj Mahal to ancient temples and forts.</p>
+            </a>
+
+            <!-- Food Category -->
+            <a href="food.html" class="category-card food">
+                <h3>Food</h3>
+                <p>Taste the diverse flavors of Indian cuisine, from spicy curries to sweet desserts.</p>
+            </a>
+
+            <!-- Festival Category -->
+            <a href="festivals.html" class="category-card festival">
+                <h3>Festival</h3>
+                <p>Celebrate the vibrant festivals of India, from Diwali to Holi and many more.</p>
+            </a>
+
+            <!-- Music Category -->
+            <a href="music.html" class="category-card music">
+                <h3>Music</h3>
+                <p>Immerse yourself in the melodies of Indian classical, folk, and contemporary music.</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

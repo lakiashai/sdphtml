@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Indian Culture</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: linear-gradient(90deg, #fdd835, #ff8a65);
+            padding: 10px 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0; 
+        }
+
+        nav {
+            margin: 0; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; 
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px; 
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            transition: color 0.3s ease; 
+        }
+
+        nav ul li a:hover {
+            color: #ff6600; 
+        }
+
+        .search-container {
+            display: flex; 
+            align-items: center; 
+        }
+
+        input[type="text"] {
+            padding: 5px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            outline: none; 
+        }
+
+        input[type="text"]::placeholder {
+            color: #aaa; 
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: black; /* Dark pink color */
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff6600; /* Button background color */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #cc5200; /* Darker shade on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcc00;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .search-container input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #fff;
+            border: none;
+            color: black;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>INDIAN CULTURE</h1>
+        <nav>
+            <ul>
+                <li><a href="userhome.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="article.html">Articles</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form action="submit_contact.php" method="POST"> <!-- Adjust action as necessary -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2024 Indian Culture and Heritage, All rights Reserved.</p>
+    </footer>
+</body>
+</html>
